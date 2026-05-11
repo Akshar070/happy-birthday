@@ -114,33 +114,63 @@ function checkAnswer(){
 
     successSound.play();
 
+    /* LEVEL 1 */
+
     if(currentLevel === 1){
 
       unlockLevel(2);
 
       showPopup(
         "MISSION 1 COMPLETE 🚀\n\nISRO somehow approved this man."
-);
+      );
+
+      setTimeout(() => {
+
+        closePopup();
+
+        startLevel(2);
+
+      }, 2200);
 
     }
+
+    /* LEVEL 2 */
 
     else if(currentLevel === 2){
 
       unlockLevel(3);
 
-      showPopup("MISSION 2 COMPLETE 🚀\n\nECE students are the real MVPs.");
+      showPopup(
+        "MISSION 2 COMPLETE ⚡\n\nECE survived. Barely."
+      );
+
+      setTimeout(() => {
+
+        closePopup();
+
+        startLevel(3);
+
+      }, 2200);
 
     }
 
+    /* LEVEL 3 */
+
     else if(currentLevel === 3){
+
+      showPopup(
+        "🎉 HAPPY BIRTHDAY ADARSH BACCHA 🚀\n\nSatellite Engineer.\nCircuit Destroyer.\nProfessional Sleep Sacrificer."
+      );
 
       launchConfetti();
 
       setTimeout(() => {
 
+        closePopup();
+
         openFinalScreen();
 
-      }, 2500);
+      }, 3500);
 
     }
 
@@ -148,7 +178,9 @@ function checkAnswer(){
 
   else{
 
-    alert("Wrong answer. Try again.");
+    alert(
+      "❌ Wrong Answer.\n\nSignal lost. Try again."
+    );
 
   }
 

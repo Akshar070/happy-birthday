@@ -5,11 +5,29 @@
 }
 
 body{
+
   font-family:'Orbitron', sans-serif;
-  background:black;
+
+  background:
+  radial-gradient(circle at top left,#1e90ff11,transparent 35%),
+  radial-gradient(circle at bottom right,#1e90ff11,transparent 35%),
+
+    url("assets/space.jpg");
+
+  background-size:cover;
+
+  background-position:center;
+
+  background-repeat:no-repeat;
+
+  background-attachment:fixed;
+
   color:white;
+
   min-height:100vh;
+
   overflow-x:hidden;
+
 }
 
 /* Animated Background */
@@ -543,29 +561,6 @@ input{
   background:#1e90ff;
   color:white;
   box-shadow:0 0 15px rgba(30,144,255,0.5);
-}
-/* SPACE GRID */
-
-body::after{
-  content:"";
-  position:fixed;
-  inset:0;
-
-  background-image:
-    linear-gradient(
-      rgba(30,144,255,0.08) 1px,
-      transparent 1px
-    ),
-
-    linear-gradient(
-      90deg,
-      rgba(30,144,255,0.08) 1px,
-      transparent 1px
-    );
-
-  background-size:40px 40px;
-
-  z-index:-2;
 }
 
 /* RADAR PULSE */
