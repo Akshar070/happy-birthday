@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Confetti Library -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Happy Birthday Adarsh</title>
+
+  <!-- Orbitron Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background Music -->
+  <audio id="bgMusic" loop>
+    <source src="assets/bgmusic.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- Click Sound -->
+  <audio id="clickSound">
+    <source src="assets/click.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- Success Sound -->
+  <audio id="successSound">
+    <source src="assets/success.mp3" type="audio/mp3">
+  </audio>
+
+  <div class="container">
+
+    <!-- Welcome Box -->
+    <div class="welcome-box fade-in">
+
+      <h1>MISSION AADY</h1>
+
+      <p class="subtitle">
+        ISRO Intern. Satellite Survivor. ECE Victim.<br><br>
+
+        This mission contains classified memories,
+        questionable engineering decisions,
+        emotional damage from lab records,
+        and one underpaid satellite scientist.<br><br>
+
+        Complete all mission levels to unlock
+        the Birthday Payload.
+      </p>
+
+      <button class="music-btn" onclick="toggleMusic()">
+        MUSIC ON/OFF
+      </button>
+
+      <div class="menu">
+
+        <button class="level-btn" onclick="startLevel(1)">
+          MISSION 1
+        </button>
+
+        <button class="locked" id="level2">
+          MISSION 2 🔒
+        </button>
+
+        <button class="locked" id="level3">
+          MISSION 3 🔒
+        </button>
+
+        <button class="sidequest" onclick="sideQuest()">
+          SIDE QUEST
+        </button>
+
+      </div>
+
+      <div class="footer">
+        Birthday Mission Interface v2.0
+      </div>
+
+    </div>
+
+    <!-- Game Screen -->
+    <div class="game-screen" id="gameScreen">
+
+      <h2 id="levelTitle">LEVEL 1</h2>
+
+      <p class="question" id="questionText">
+        Dummy Question
+      </p>
+
+      <input
+        type="text"
+        id="answerInput"
+        placeholder="Enter your answer"
+      >
+
+      <button class="submit-btn" onclick="checkAnswer()">
+        SUBMIT
+      </button>
+
+      <button class="back-btn" onclick="backToHome()">
+        BACK TO LEVELS
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- Popup -->
+  <!-- Popup -->
+<div class="popup" id="popup">
+
+  <div class="popup-card pop-animation">
+
+    <img src="assets/adarsh.jpg" alt="Adarsh">
+
+    <h2 id="popupText">
+      LEVEL COMPLETE
+    </h2>
+
+    <button class="close-btn" onclick="closePopup()">
+      CONTINUE
+    </button>
+
+  </div>
+
+</div>
+
+<!-- Final Birthday Screen -->
+<div class="final-screen" id="finalScreen">
+
+  <div class="final-content">
+
+    <h1 class="birthday-title">
+  🚀 HAPPY BIRTHDAY COMMANDER ADARSH 🚀
+    </h1>
+
+    <p class="typing-line">
+      Satellite Engineer • ISRO Survivor • ECE Warrior
+    </p>
+
+    <p class="birthday-subtitle">
+      Memories. Chaos. Friendship. Family .
+    </p>
+
+    <!-- Photo Carousel -->
+    <div class="carousel-container">
+
+      <button class="nav-btn" onclick="prevSlide()">
+        ❮
+      </button>
+
+      <div class="carousel">
+
+        <img
+          id="carouselImage"
+          src="assets/photo1.jpg"
+          alt="Memory"
+        >
+
+        <div class="caption" id="carouselCaption">
+          Dummy Caption 1
+        </div>
+
+      </div>
+
+      <button class="nav-btn" onclick="nextSlide()">
+        ❯
+      </button>
+
+</div>
+
+<button class="final-back-btn" onclick="backToLevelsFromFinal()">
+  ⬅ BACK TO LEVELS
+</button>
+
+</div>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
