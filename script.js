@@ -11,7 +11,7 @@ const levels = {
   2:{
     question:
     "Mission 2:\nThings Ady ignores professionally:",
-    answer:"calls"
+    answer:"messages"
   },
 
   3:{
