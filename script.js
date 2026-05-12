@@ -4,14 +4,14 @@ const levels = {
 
   1:{
     question:
-    "Mission 1:\nWhich organization trusted Adarsh enough to let him near a satellite?",
-    answer:"isro"
+    "Mission 1:\nAdy can communicate with satellites but still disappears from WhatsApp for 8 business days. True or False?",
+    answer:"true"
   },
 
   2:{
     question:
-    "Mission 2:\nWhat branch suffers the most from circuits, signals, and sleep deprivation?",
-    answer:"ece"
+    "Mission 2:\nThings Ady ignores professionally:",
+    answer:"calls"
   },
 
   3:{
@@ -34,7 +34,7 @@ const photos = [
   },
 
   {
-    image:"assets/photo2.jpg",
+    image:"assets/photo2.jpeg",
 
     caption:
     "Built a satellite but still struggles to reply to messages."
