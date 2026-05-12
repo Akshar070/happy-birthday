@@ -41,14 +41,14 @@ const photos = [
   },
 
   {
-    image:"assets/photo3.jpg",
+    image:"assets/photo3.jpeg",
 
     caption:
     "ECE engineers after solving one circuit problem and developing 14 new mental issues."
   },
 
   {
-    image:"assets/photo4.jpg",
+    image:"assets/photo4.jpeg",
 
     caption:
     "Somewhere between satellites and semiconductors, bro forgot what sleep feels like."
